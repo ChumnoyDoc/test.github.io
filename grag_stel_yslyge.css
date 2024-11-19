@@ -1,0 +1,579 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+/* Шапка */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.nav-menu li {
+    margin: 0 22px;
+}
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #5D81FF;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+    left: 0;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+.order-button {
+    background-color: #5D81FF; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+}
+
+.order-button:hover {
+    transform: scale(1.1);
+}
+
+.header-image {
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+/* Основная часть */
+body {
+    place-items: center; 
+    }
+    main{
+        margin-top: -10px;
+    }
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yslug {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .yslug img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .spisok {
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 32px;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .nrav {
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        opacity: 0.3;
+        margin-top: -40px;
+    }
+
+    .white-pramoygolnik {
+        width: 100%; 
+        height: 2314px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+
+    .razr-magazin {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 64px;
+        position: absolute;
+        text-align: left;
+        line-height: 70px;
+        max-width: 900px;
+        margin-bottom: 2000px;
+        margin-right: 700px;
+    }
+
+    .dopis1 {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 24px;
+        text-align: left;
+        position: absolute;
+        max-width: 800px;
+        line-height: 30px;
+        margin-bottom: 1700px;
+        margin-right: 800px;
+    }
+    .primemag{
+        text-align: left;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 1000px;
+        margin-bottom: 1800px;
+    }
+    .primemag img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ot60000{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 36px;
+        position: absolute;
+        text-align: right;
+        margin-right: 1430px;
+        margin-bottom: 1520px;
+    }
+    .razr-kl {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 64px;
+        position: absolute;
+        text-align: left;
+        line-height: 70px;
+        max-width: 700px;
+        margin-bottom: 1100px;
+        margin-left: 700px;
+    }
+    .dopis2 {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 24px;
+        text-align: left;
+        position: absolute;
+        max-width: 800px;
+        line-height: 30px;
+        margin-top: -750px;
+        margin-left: 800px;
+    }
+    .primkl{
+        text-align: right;
+        position: absolute;
+        margin-top: -900px;
+        margin-right: 950px;
+    }
+    .primkl img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ot40000{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 36px;
+        position: absolute;
+        text-align: right;
+        margin-right: -180px;
+        margin-bottom: 530px;
+    }
+    
+    .razr-log {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 64px;
+        position: absolute;
+        text-align: left;
+        line-height: 70px;
+        max-width: 900px;
+        margin-bottom: 150px;
+        margin-right: 700px;
+    }
+    .dopis3 {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 24px;
+        text-align: left;
+        position: absolute;
+        max-width: 800px;
+        line-height: 30px;
+        margin-top: 250px;
+        margin-right: 790px;
+    }
+    .primelog{
+        text-align: left;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 800px;
+        margin-bottom: -50px;
+    }
+    .primelog img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ot10000{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 36px;
+        position: absolute;
+        text-align: right;
+        margin-right: 1430px;
+        margin-top: 520px;
+    }
+    .razr-uiux {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 64px;
+        position: absolute;
+        text-align: left;
+        line-height: 70px;
+        max-width: 900px;
+        margin-top: 800px;
+        margin-left: 800px;
+    }
+    .dopis4 {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        position: absolute;
+        font-size: 24px;
+        text-align: left;
+        max-width: 800px;
+        line-height: 30px;
+        margin-top: 1100px;
+        margin-left: 810px;
+    }
+    .primuiux{
+        text-align: right;
+        position: absolute;
+        margin-top: 1100px;
+        margin-right: 950px;
+    }
+    .primuiux img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ot80000{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 36px;
+        position: absolute;
+        text-align: right;
+        margin-right: -180px;
+        margin-top: 1350px;
+    }
+    .dopyslyge {
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size: 64px;
+        text-align: center;
+        position: absolute;
+        max-width: 1100px;
+        margin-top: 1900px;
+    }
+    .seo{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size:24px;
+        position: absolute;
+        text-align: right;
+        margin-bottom: -2030px;
+        margin-right: 450px;
+    }
+    .aydit{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size:24px;
+        position: absolute;
+        text-align: right;
+        margin-bottom: -2120px;
+        margin-right: 570px;
+    }
+    .pdf{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size:24px;
+        position: absolute;
+        text-align: right;
+        margin-bottom: -2030px;
+        margin-left: 400px;
+    }
+    .bot{
+        font-family: 'Onest', sans-serif;
+        color: #151515;
+        font-size:24px;
+        position: absolute;
+        text-align: right;
+        margin-bottom: -2120px;
+        margin-left: 200px;
+    }
+    .ykaz{
+        font-family: 'Onest', sans-serif;
+        color: #5D81FF;
+        font-size: 64px;
+        text-align: left;
+        margin-top: 1px;
+        margin-right: 150px;
+        
+    }
+    .kach{
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 64px;
+        text-align: left;
+        margin-top: -140px;
+        margin-right: 320px;
+        
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .left-column,
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cer-pramoygolnik1,
+    .cer-pramoygolnik2,
+    .cer-pramoygolnik3,
+    .cer-pramoygolnik4 {
+        width: 787px; 
+        height: 188px;
+        background-color: #151515;
+        border-radius: 36px;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .nomer1, .nomer2, .nomer3, .nomer4 {
+        text-align: right;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    .ysluga, .bedget, .sfera, .kontakt {
+        font-family: 'Onest', sans-serif;
+        color: #5D81FF;
+        font-size: 40px;
+        text-align: left;
+        position: absolute;
+        margin-left: 120px;
+        margin-top: -5px;
+    }
+    
+    .opisanie1, .opisanie2, .opisanie3, .opisanie4 {
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: left;
+        margin-left: 120px;
+        margin-top: 65px
+    }
+/* Подвал */
+footer {
+    margin-top: 150px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+}
+.left-side{
+    padding: 0 7%;
+}
+.right-side {
+    padding: 0 7%;
+}
+.polosa{
+    width: 100%; 
+    max-width: 1421px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 300px;
+}
+.ybed, .zaivka, .zalp-form, .ooostudios {
+    text-align: left;
+    margin-right: 0px;
+}
+.ybed{
+    font-family: 'Onest', sans-serif;
+    color:#5D81FF;
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+}
+.zaivka{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    bottom: 100px;
+    margin-bottom: -90px;
+}
+.zalp-form{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    opacity: 0.4;
+    max-width: 450px;
+}
+.order-button1 {
+    background-color: #5D81FF; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.order-button1:hover {
+    transform: scale(1.1);
+}
+
+.ooostudios{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 24px;
+    text-align: left;
+    opacity: 0.3;
+    margin-top: 100px; 
+}
+.polosa2{
+    max-width: 482px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -70px;
+}
+.phone{
+    text-align: left;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+.phone img{
+    max-width: 100%;
+    height: auto;
+}
+.telefon{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.polosa3{
+    max-width: 598px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.pisate{
+    position: absolute;
+    margin-right: -100px;
+    margin-top: 240px;
+}
+.pisate img{
+    max-width: 100%;
+    height: auto;
+}
+.pochta{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 60px;
+}
+.social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 280px;
+}
+
+.social .icon {
+    margin: 0 10px;
+}
+.icon img {
+    width: auto;
+    height: auto;
+}

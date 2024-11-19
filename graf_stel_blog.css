@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+/* Шапка */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.nav-menu li {
+    margin: 0 22px;
+}
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #5D81FF;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+    left: 0;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+.order-button {
+    background-color: #5D81FF; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+}
+
+.order-button:hover {
+    transform: scale(1.1);
+}
+
+.header-image {
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+/* Основная часть */
+body {
+    place-items: center; 
+    }
+    main{
+        margin-top: -10px;
+    }
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-content img {
+    max-width: 100%;
+    height: auto; 
+}
+.blog{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novstat{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+}
+.posl-nov{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    max-width: 800px;
+    opacity: 0.5;
+    margin-top: -50px;
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.pramoyg-ser1 {
+    width: 753px;
+    height: 390px;
+    background-color: #151515;
+    border-radius: 85px;
+    margin-top: 70px;
+}
+.log-graf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-right: 400px;
+}
+.tema1{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: left;
+    max-width: 300px;
+    margin-top: -250px;
+    margin-left: 300px;
+    line-height: 60px;
+}
+.ytocnenie1{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    max-width: 500px;
+    line-height: 20px;
+    opacity: 0.5;
+    margin-left: 300px;
+    margin-top: -50px;
+}
+.tema2{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: left;
+    max-width: 400px;
+    margin-top: -250px;
+    margin-left: 300px;
+    line-height: 60px;
+}
+.ytocnenie2{
+    font-family: 'Onest', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    max-width: 500px;
+    line-height: 20px;
+    opacity: 0.5;
+    margin-left: 300px;
+    margin-top: -50px;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.pramoyg-ser2 {
+    width: 753px;
+    height: 390px;
+    background-color: #151515;
+    border-radius: 85px;
+    margin-top: 70px;
+}
+/* Подвал */
+footer {
+    margin-top: 150px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+}
+.left-side{
+    padding: 0 7%;
+}
+.right-side {
+    padding: 0 7%;
+}
+.polosa{
+    width: 100%; 
+    max-width: 1421px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 300px;
+}
+.ybed, .zaivka, .zalp-form, .ooostudios {
+    text-align: left;
+    margin-right: 0px;
+}
+.ybed{
+    font-family: 'Onest', sans-serif;
+    color:#5D81FF;
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+}
+.zaivka{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    bottom: 100px;
+    margin-bottom: -90px;
+}
+.zalp-form{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    opacity: 0.4;
+    max-width: 450px;
+}
+.order-button1 {
+    background-color: #5D81FF; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.order-button1:hover {
+    transform: scale(1.1);
+}
+
+.ooostudios{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 24px;
+    text-align: left;
+    opacity: 0.3;
+    margin-top: 100px; 
+}
+.polosa2{
+    max-width: 482px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -70px;
+}
+.phone{
+    text-align: left;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+.phone img{
+    max-width: 100%;
+    height: auto;
+}
+.telefon{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.polosa3{
+    max-width: 598px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.pisate{
+    position: absolute;
+    margin-right: -100px;
+    margin-top: 240px;
+}
+.pisate img{
+    max-width: 100%;
+    height: auto;
+}
+.pochta{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 60px;
+}
+.social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 280px;
+}
+
+.social .icon {
+    margin: 0 10px;
+}
+.icon img {
+    width: auto;
+    height: auto;
+}

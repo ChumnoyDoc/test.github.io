@@ -1,0 +1,1062 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+/* Шапка */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.nav-menu li {
+    margin: 0 22px;
+}
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #5D81FF;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+    left: 0;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+.order-button {
+    background-color: #5D81FF; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+}
+
+.order-button:hover {
+    transform: scale(1.1);
+}
+
+.header-image {
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+@media screen and (max-width: 320px) {
+    .header-content {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin-top: 5px;
+    }
+    
+    .nav-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .nav-menu li {
+        margin: 0 5px;
+    }
+    .nav-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 6px;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+    
+    .nav-menu a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background-color: #5D81FF;
+        transition: width 0.3s ease;
+        border-radius: 5px;
+        left: 0;
+    }
+    
+    .nav-menu a:hover::after {
+        width: 100%;
+    }
+    .order-button {
+        background-color: #5D81FF; 
+        color: white;
+        text-decoration: none;
+        padding: 3px 10px;
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5px;
+        font-weight: normal;
+        transition: transform 0.3s ease;
+    }
+    
+    .order-button:hover {
+        transform: scale(1.1);
+    }
+    
+    .header-image {
+        height: 25px;
+        width: auto;
+        border-radius: 10px;
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin-top: 5px;
+    }
+    
+    .nav-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .nav-menu li {
+        margin: 0 5px;
+    }
+    .nav-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 8px;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+    
+    .nav-menu a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background-color: #5D81FF;
+        transition: width 0.3s ease;
+        border-radius: 5px;
+        left: 0;
+    }
+    
+    .nav-menu a:hover::after {
+        width: 100%;
+    }
+    .order-button {
+        background-color: #5D81FF; 
+        color: white;
+        text-decoration: none;
+        padding: 3px 10px;
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5px;
+        font-weight: normal;
+        transition: transform 0.3s ease;
+    }
+    
+    .order-button:hover {
+        transform: scale(1.1);
+    }
+    
+    .header-image {
+        height: 25px;
+        width: auto;
+        border-radius: 10px;
+        margin-top: 2px;
+    }
+}
+/* Основная часть */
+body {
+place-items: center; 
+}
+main{
+    margin-top: -10px;
+}
+.intro {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.intro-content {
+width: 100%;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+}
+.logo-stud {
+margin-top: 80px;
+margin-left: 120px;
+}
+.logo-stud img{
+    max-width: 100%;
+    height: auto;
+}
+.intro p {
+text-align: left;
+margin-left: 100px;
+}
+.description {
+display: flex;
+flex-direction: column;
+max-width: 800px;
+}
+.graf-studio {
+font-family: 'Montserrat', sans-serif;
+text-align: left;
+color: #ffffff;
+font-size: 18px;
+margin-top: -20px;
+padding-left: 30px;
+opacity: 0.3;
+}
+.design-firma {
+font-family: 'Montserrat', sans-serif;
+margin-left: 30px;
+margin-top: -75px;
+font-size: 36px;
+text-align: left;
+color: #ffffff;
+}
+.puff {
+text-align: right;
+margin-top: -500px;
+margin-right: 140px;
+}
+.puff img {
+max-width: 100%;
+height: auto;
+}
+.strel {
+text-align: center;
+margin-top: -520px;
+margin-right: 150px;
+}
+.strel img {
+max-width: 100%;
+height: auto;
+}
+.containers {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+margin-top: -60px;
+}
+.ser_pramoygolnic {
+    height: 516px;
+    max-width: 1551px;
+    background-color: #151515;
+    border-radius: 70px;
+    padding: 20px;
+    position: relative;
+}
+.chast-yslyg{
+    display: flex;
+    justify-content: center;
+    margin-right: 350px;
+    margin-top: 20px;
+}
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.magazin, .klych, .ux{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    font-family: 'Onest', sans-serif;
+    padding: 8px;
+    margin: 5px;
+    margin-top: -100px;
+}
+.magazin{
+    margin-top: -10px;
+    margin-right: 1100px;
+}
+.klych{
+    margin-right: 70px;
+}
+.ux{
+    margin-left: 950px;   
+}
+.ot60000, .ot40000, .ot80000{
+    color: #5D81FF;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    font-family: 'Onest', sans-serif;
+    padding: 8px;
+    margin: 5px;
+}
+.ot60000{
+    margin-right: 1100px;
+    margin-top: -70px;
+}
+.ot40000{
+    margin-right: 70px;
+    margin-top: -100px;
+}
+.ot80000{
+    margin-left: 960px;
+    margin-top: -100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -380px;
+}
+
+.icons img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex-direction: column;
+    align-items: center;
+}
+.primer-rabot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+.nache-chifra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nache-chifra img {
+    max-width: 100%;
+    height: auto;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.za-vse-vrema {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    opacity: 0.3;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: -20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -50px 
+}
+
+.white-blok {
+    width: 100%; 
+    max-width: 495px;
+    height: 225px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container-two {
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.white-blok-two {
+    width: 100%; 
+    max-width: 758px;
+    height: 225px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.blac-blok {
+    width: 100%;
+    height: 555px;
+    background-color: #151515;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.plus1{
+    text-align: right;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.plus1 img{
+    max-width: 100%;
+    height: auto;
+}
+.plus2{
+    text-align: right;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+.plus2 img{
+    max-width: 100%;
+    height: auto;
+}
+.plus3{
+    text-align: right;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: -30px;
+}
+.plus3 img{
+    max-width: 100%;
+    height: auto;
+}
+.plus4{
+    text-align: right;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: -350px;
+}
+.plus4 img{
+    max-width: 100%;
+    height: auto;
+}
+.plus210{
+    color: #393939;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    font-size: 96px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    
+}
+.plus30{
+    color: #393939;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    font-size: 96px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    
+}
+.plus17{
+    color: #393939;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    font-size: 96px;
+    margin-right: 320px;
+    margin-bottom: 50px;
+    
+}
+.plus31{
+    color: #393939;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    font-size: 96px;
+    margin-right: 600px;
+    margin-bottom: 50px;
+    
+}
+.top5{
+    color: #393939;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    font-size: 96px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+    
+}
+.realz1{
+    color:#111111;
+    font-family: 'Onest', sans-serif;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: -70px;
+    margin-bottom: -100px;
+    max-width: 420px;
+}
+.realz2{
+    color:#111111;
+    font-family: 'Onest', sans-serif;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: -90px;
+    margin-bottom: -100px;
+    max-width: 420px;
+}
+.realz3{
+    color:#111111;
+    font-family: 'Onest', sans-serif;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: -70px;
+    margin-bottom: -100px;
+    max-width: 420px;
+}
+.realz4{
+    color:#111111;
+    font-family: 'Onest', sans-serif;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: -70px;
+    margin-bottom: -100px;
+    max-width: 700px;
+}
+.realz5{
+    color:#111111;
+    font-family: 'Onest', sans-serif;
+    opacity: 0.7;
+    position: absolute;
+    margin-left: -270px;
+    margin-bottom: -90px;
+    max-width: 700px;
+}
+.logo1{
+    text-align: left;
+    position: absolute;
+    margin-bottom: 150px;
+    margin-left: -1200px;
+}
+.logo1 img{
+    max-width: 100%;
+    height: auto;
+}
+.logo2{
+    text-align: left;
+    position: absolute;
+    margin-bottom: 150px;
+    margin-left: -500px;
+}
+.logo2 img{
+    max-width: 100%;
+    height: auto;
+}
+.logo3{
+    text-align: left;
+    position: absolute;
+    margin-bottom: 180px;
+    margin-left: 150px;
+}
+.logo3 img{
+    max-width: 100%;
+    height: auto;
+}
+.logo4{
+    text-align: left;
+    position: absolute;
+    margin-bottom: -150px;
+    margin-left: -1200px;
+}
+.logo4 img{
+    max-width: 100%;
+    height: auto;
+}
+.logo5{
+    text-align: left;
+    position: absolute;
+    margin-bottom: -150px;
+    margin-left: -500px;
+}
+.logo5 img{
+    max-width: 100%;
+    height: auto;
+}
+.logo6{
+    text-align: left;
+    position: absolute;
+    margin-bottom: -150px;
+    margin-left: 150px;
+}
+.logo6 img{
+    max-width: 100%;
+    height: auto;
+}
+.gord{
+    font-family: 'Onest', sans-serif;
+    color:#5D81FF;
+    font-size: 64px;
+    position: absolute;
+    text-align: left;
+    margin-right: -1000px;
+    margin-bottom: 200px;
+}
+.klient{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    position: absolute;
+    text-align: left;
+    margin-right: -920px;
+    margin-bottom: 70px;
+}
+.dopis{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    position: absolute;
+    text-align: left;
+    margin-right: -900px;
+    margin-bottom: -70px;
+    opacity: 0.3;
+    max-width: 500px;
+}
+@media screen and (max-width: 320px) {
+
+.logo-stud {
+margin-top: 30px;
+margin-left: 20px;
+}
+.logo-stud img{
+    max-width: 150px;
+    height: auto;
+}
+    .intro p {
+        text-align: left;
+        margin-left: 10px; /* Уменьшить отступ слева */
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        max-width: 150px; /* Установить максимальную ширину на 100% */
+    }
+    
+    .graf-studio {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        color: #ffffff;
+        font-size: 3px; /* Уменьшить размер шрифта */
+        margin-top: 0; /* Убрать отрицательный отступ */
+        padding-left: 10px; /* Уменьшить отступ слева */
+        opacity: 0.3;
+    }
+    
+    .design-firma {
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 10px; /* Уменьшить отступ слева */
+        margin-top: -10px; /* Убрать отрицательный отступ */
+        font-size: 7px; /* Уменьшить размер шрифта */
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .puff {
+        text-align: right;
+        margin-top: -90px; /* Убрать отрицательный отступ */
+        margin-right: 20px; /* Уменьшить отступ справа */
+    }
+    
+    .puff img {
+        max-width: 120px; /* Увеличить ширину изображения */
+        height: auto;
+    }
+    
+    .strel {
+        text-align: center;
+        margin-top: -60px; /* Убрать отрицательный отступ */
+        margin-right: 20px;
+    }
+    
+    .strel img {
+        max-width: 100px; /* Увеличить ширину изображения */
+        height: auto;
+    }
+    
+    .containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Уменьшить отступы */
+        margin-top: 0; /* Убрать отрицательный отступ */
+    }
+    
+    .ser_pramoygolnic {
+        height: 200px; /* Оставить без изменений */
+        max-width: 100%; /* Установить максимальную ширину на 100% */
+        background-color: #151515;
+        border-radius: 20px; /* Уменьшить радиус */
+        padding: 10px; /* Уменьшить отступы */
+        position: relative;
+    }
+    
+    .chast-yslyg {
+        display: flex;
+        justify-content: center;
+        margin-right: 0; /* Убрать отступ справа */
+        margin-top: 10px; /* Уменьшить отступ сверху */
+    }
+    
+    .text-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Центрировать содержимое */
+    }
+    
+    .magazin, .klych, .ux {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px; /* Уменьшить размер шрифта */
+        display: flex;
+        font-family: 'Onest', sans-serif;
+        padding: 4px; /* Уменьшить отступы */
+        margin: 2px; /* Уменьшить отступы */
+        margin-top: 0; /* Убрать отрицательный отступ */
+    }
+    
+    .ot60000, .ot40000, .ot80000 {
+        color: #5D81FF;
+        text-decoration: none;
+        font-size: 18px; /* Уменьшить размер шрифта */
+        display: flex;
+        font-family: 'Onest', sans-serif;
+        padding: 4px; /* Уменьшить отступы */
+        margin: 2px; /* Уменьшить отступы */
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center; /* Центрировать содержимое */
+        gap: 10px; /* Уменьшить промежутки между иконками */
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        margin-top: 20px; /* Уменьшить отступ сверху */
+    }
+    
+    .icons img {
+        max-width: 20px; /* Уменьшить ширину изображений */
+        height: auto;
+    }
+    
+    .nache-chifra img {
+        max-width: 30px; /* Увеличить ширину изображения */
+        height: auto;
+    }
+    
+    .white-blok, .white-blok-two {
+        width: 100%; 
+        max-width: 100%; /* Установить максимальную ширину на 100% */
+        height: auto; /* Установить высоту на auto */
+        background-color: #ffffff;
+        border-radius: 20px; /* Уменьшить радиус */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Уменьшить отступ сверху */
+    }
+    
+    .blac-blok {
+        width: 100%;
+        height: auto; /* Установить высоту на auto */
+        background-color: #151515;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Уменьшить отступ сверху */
+    }
+    
+    .plus1, .plus2, .plus3, .plus4 {
+        text-align: right;
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+        margin-left: 0; /* Убрать левый отступ */
+    }
+    
+    .plus1 img, .plus2 img, .plus3 img, .plus4 img {
+        max-width: 100%; /* Установить ширину на 100% */
+        height: auto;
+    }
+    
+    .plus210, .plus30, .plus17, .plus31, .top5 {
+        color: #393939;
+        font-family: 'Onest', sans-serif;
+        text-align: left;
+        font-size: 36px; /* Уменьшить размер шрифта */
+        margin-right: 0; /* Убрать правый отступ */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+    }
+    
+    .realz1, .realz2, .realz3, .realz4, .realz5 {
+        color: #111111;
+        font-family: 'Onest', sans-serif;
+        opacity: 0.7;
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        margin-left: 0; /* Убрать левый отступ */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+        max-width: 100%; /* Установить максимальную ширину на 100% */
+    }
+    
+    .logo1, .logo2, .logo3, .logo4, .logo5, .logo6 {
+        text-align: left;
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+        margin-left: 0; /* Убрать левый отступ */
+    }
+    
+    .logo1 img, .logo2 img, .logo3 img, .logo4 img, .logo5 img, .logo6 img {
+        max-width: 20px; /* Уменьшить ширину изображений */
+        height: auto;
+    }
+    
+    .gord {
+        font-family: 'Onest', sans-serif;
+        color: #5D81FF;
+        font-size: 36px; /* Уменьшить размер шрифта */
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        text-align: left;
+        margin-right: 0; /* Убрать правый отступ */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+    }
+    
+    .klient {
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 36px; /* Уменьшить размер шрифта */
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        text-align: left;
+        margin-right: 0; /* Убрать правый отступ */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+    }
+    
+    .dopis {
+        font-family: 'Onest', sans-serif;
+        color: #ffffff;
+        font-size: 14px; /* Уменьшить размер шрифта */
+        position: relative; /* Изменить на relative для лучшего позиционирования */
+        text-align: left;
+        margin-right: 0; /* Убрать правый отступ */
+        margin-bottom: 20px; /* Уменьшить отступ снизу */
+        opacity: 0.3;
+        max-width: 100%; /* Установить максимальную ширину на 100% */
+    }
+}
+
+/* Подвал */
+footer {
+    margin-top: 150px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+}
+.left-side{
+    padding: 0 7%;
+}
+.right-side {
+    padding: 0 7%;
+}
+.polosa{
+    width: 100%; 
+    max-width: 1421px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 300px;
+}
+.ybed, .zaivka, .zalp-form, .ooostudios {
+    text-align: left;
+    margin-right: 0px;
+}
+.ybed{
+    font-family: 'Onest', sans-serif;
+    color:#5D81FF;
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+}
+.zaivka{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    bottom: 100px;
+    margin-bottom: -90px;
+}
+.zalp-form{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    opacity: 0.4;
+    max-width: 450px;
+}
+.order-button1 {
+    background-color: #5D81FF; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.order-button1:hover {
+    transform: scale(1.1);
+}
+
+.ooostudios{
+    font-family: 'Montserrat', sans-serif;
+    color:#ffffff;
+    font-size: 24px;
+    text-align: left;
+    opacity: 0.3;
+    margin-top: 100px; 
+}
+.polosa2{
+    max-width: 482px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -70px;
+}
+.phone{
+    text-align: left;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+.phone img{
+    max-width: 100%;
+    height: auto;
+}
+.telefon{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 64px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.polosa3{
+    max-width: 598px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.pisate{
+    position: absolute;
+    margin-right: -100px;
+    margin-top: 240px;
+}
+.pisate img{
+    max-width: 100%;
+    height: auto;
+}
+.pochta{
+    font-family: 'Onest', sans-serif;
+    color:#ffffff;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 60px;
+}
+.social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.social .icon {
+    margin: 0 10px;
+}
+.icon img {
+    width: auto;
+    height: auto;
+}
